@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Live Class</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Virtual Classroom</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Live Class</h2>
+
+        <div class="class-box">
+
+            <h3 id="classTitle">
+                Virtual Class
+            </h3>
+
+            <p>
+                Teacher:
+                <strong id="teacherName">
+                    Teacher
+                </strong>
+            </p>
+
+            <br>
+
+            <button onclick="joinClass()">
+                Join Live Class
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+document.getElementById("classTitle").innerText =
+    localStorage.getItem("className") || "Virtual Class";
+
+document.getElementById("teacherName").innerText =
+    localStorage.getItem("teacher") || "Teacher";
+
+function joinClass() {
+    alert("You have joined the live class!");
+}
+
+</script>
+
+</body>
+</html>
