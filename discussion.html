@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Discussion Forum</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Virtual Classroom</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Discussion Forum</h2>
+
+        <form onsubmit="postQuestion(event)">
+
+            <label>Ask a Question</label>
+
+            <textarea
+                id="question"
+                rows="5"
+                placeholder="Enter your question..."
+                required
+            ></textarea>
+
+            <button type="submit">
+                Post Question
+            </button>
+
+        </form>
+
+    </div>
+
+    <div class="card">
+
+        <h2>Questions</h2>
+
+        <div id="questionList">
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
