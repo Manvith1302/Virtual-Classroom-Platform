@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Virtual Classroom</h1>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>Login</h2>
+
+        <form onsubmit="loginUser(event)">
+
+            <label>Email</label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter email"
+                required
+            >
+
+            <label>Password</label>
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                required
+            >
+
+            <label>User Type</label>
+
+            <select>
+                <option>Student</option>
+                <option>Teacher</option>
+            </select>
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+        <p style="margin-top:15px;">
+            New student?
+            <a href="register.html">Register</a>
+        </p>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
